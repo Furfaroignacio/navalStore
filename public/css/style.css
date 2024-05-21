@@ -1,9 +1,14 @@
 * {
     font-family:sans-serif;
 }
-.navbar{
+header{
     background-color: #507DBC;
 }
 #logo {
     width: 50px;
 }
+#user {
+    width: 50px;
+    column-rule: black;
+}
+
