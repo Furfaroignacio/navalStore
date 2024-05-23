@@ -1,0 +1,35 @@
+* {
+    font-family:sans-serif;
+}
+/*Header*/
+header{
+    background-color: #507DBC;
+}
+#logo {
+    width: 50px;
+}
+.nav-link .fa-lg {
+    font-size: 1.5em; 
+}
+.navbar-nav .nav-item a i{
+    margin-left: 20px; 
+}
+
+.navbar-nav.ml-auto {
+    margin-left: auto;
+}
+.custom-icon {
+    font-size: 20px; 
+}
+/*BARRA D BUSQUEDA*/
+.form-control {
+    border-radius: 0.25rem; /* Ajusta el radio de borde si lo deseas */
+}
+
+.btn-outline-success {
+    border-radius: 0.25rem; /* Ajusta el radio de borde si lo deseas */
+}
+.search-form {
+    width: 40%; /* Ajusta este valor para cambiar el tamaño del contenedor de la barra de búsqueda */
+}
+
