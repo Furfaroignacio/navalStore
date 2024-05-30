@@ -38,10 +38,20 @@ header{
     height: 200px; 
     object-fit: cover;
 }
+.carousel-inner {
+    width: 100%;
+    max-height: 500px; /* Ajusta la altura máxima del carrusel */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
 
-.carousel-inner img {
-    height: 100%; 
-    object-fit: cover;
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 500px; /* Ajusta la altura máxima de la imagen */
+}
+
+.carousel-item img {
+    height: 100%; /* Ensures images fill the container height */
 }
 .card {
     height: 100%;
