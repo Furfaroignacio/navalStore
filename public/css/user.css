@@ -34,9 +34,7 @@ header{
 }
 
 /*footer */
-footer{
-    margin-top: 50px;
-}
+
 .footer .list-unstyled a {
     text-decoration: none;
     color: white;
@@ -55,4 +53,18 @@ footer{
 
 .footer .fab:hover {
     color: #ddd;
+}
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+footer h5 {
+    margin-bottom: 10px;
+}
+
+footer .fa-whatsapp, 
+footer .fa-instagram, 
+footer .fa-youtube {
+    font-size: 1.5rem;
 }
