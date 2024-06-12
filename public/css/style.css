@@ -53,6 +53,9 @@ header{
 .carousel-item img {
     height: 100%; /* Ensures images fill the container height */
 }
+
+
+
 .card {
     height: 100%;
 }
@@ -93,7 +96,7 @@ header{
     color: #ddd;
 }
 footer {
-    margin-top: 20px;
+    margin-top: 20%;
     padding-top: 20px;
 }
 
@@ -106,3 +109,29 @@ footer .fa-instagram,
 footer .fa-youtube {
     font-size: 1.5rem;
 }
+
+.cartaHockey {
+            position: relative;
+            overflow: hidden;
+        }
+      
+        .cartaHockey:hover img {
+            transform: scale(1.5);
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease;
+            text-align: center;
+            padding: 10px;
+        }
+        .cartaHockey:hover .overlay {
+            visibility: visible;
+            opacity: 1;
+        }
