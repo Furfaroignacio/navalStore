@@ -68,6 +68,9 @@ footer .fa-instagram,
 footer .fa-youtube {
     font-size: 1.5rem;
 }
+.toast-body{
+    color: #000;
+}
 
 @media (min-width: 1025px) {
     .h-custom {

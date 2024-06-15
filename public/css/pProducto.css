@@ -68,9 +68,3 @@ footer .fa-instagram,
 footer .fa-youtube {
     font-size: 1.5rem;
 }
-
-@media (min-width: 1025px) {
-    .h-custom {
-    height: 100vh !important;
-    }
-    }
