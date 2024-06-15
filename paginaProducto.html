@@ -114,14 +114,9 @@
                     <p class="product-description">Camiseta oficial. Confeccionada en microfibra con elastano y sistema Dry Fit.
                          <a class="guiaTalles" href="https://navalstore2.mitiendanube.com/guiadetalles/ ">Guia de talles:</a>
                     </p>
-                    <h3 class="product-price">$21.500</h3>
+                    <h3 class="product-price">$21.500,00</h3>
                     <div class="quantity-selector col-lg-6">
-                        <label for="quantity" class="form-label">Cantidad</label>
-                        <div class="input-group">
-                            <button class="btn btn-outline-secondary" type="button" id="quantity-decrease">-</button>
-                            <input type="number" id="quantity" class="form-control text-center" value="1" min="1">
-                            <button class="btn btn-outline-secondary" type="button" id="quantity-increase">+</button>
-                        </div>
+                        
                         
                         <div class="size-selector mb-3">
                             <label for="size" class="form-label">Talles: </label>
@@ -137,14 +132,40 @@
                             </select>
                         </div>
                     </div>
-                    <button class="btn btn-primary btn-lg agregarCart">Agregar al carrito</button>
-
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Agregar al carrito
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar remera de hockey</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="imagenModal"  src="./public/images/productos/hockey/remerahok.jpg" alt="">
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary" type="button" id="quantity-decrease">-</button>
+                            <input type="number" id="quantity" class="form-control text-center" value="1" min="1">
+                            <button class="btn btn-outline-secondary" type="button" id="quantity-increase">+</button>
+                        </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <a href="./cart.html"><button type="button" class="btn btn-primary">Ir al carrito</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
                 
             </div>
                 
         </div>
-        
+        <!-- Button trigger modal -->
+
             
 
     </main>
@@ -200,6 +221,14 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+    </script>
    <script>
     document.addEventListener('DOMContentLoaded', function () {
     const quantityInput = document.getElementById('quantity');
